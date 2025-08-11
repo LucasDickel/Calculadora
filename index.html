@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="estilo/style.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    </head>
+
+    <body>
+        <div class="calculator">
+            <div id="result"></div>
+            <div class="buttons">
+                <button onclick="clearResult('')" class="cinza">C</button>
+                <button onclick="addValue('-')" class="cinza">±</button>
+                <button onclick="addValue('/')" class="cinza">%</button>
+                <button onclick="toggleNegative('')" class="azul">÷</button>
+
+                <button onclick="addValue('7')" class="cinza-claro">7</button>
+                <button onclick="addValue('8')" class="cinza-claro">8</button>
+                <button onclick="addValue('9')" class="cinza-claro">9</button>
+                <button onclick="addValue('*')" class="azul">x</button>
+
+                <button onclick="addValue('4')" class="cinza-claro">4</button>
+                <button onclick="addValue('5')" class="cinza-claro">5</button>
+                <button onclick="addValue('6')" class="cinza-claro">6</button>
+                <button onclick="addValue('-')" class="azul">-</button>
+
+                <button onclick="addValue('1')" class="cinza-claro">1</button>
+                <button onclick="addValue('2')" class="cinza-claro">2</button>
+                <button onclick="addValue('3')" class="cinza-claro">3</button>
+                <button onclick="addValue('+')" class="azul">+</button>
+
+                <button onclick="addValue('0')" class="cinza-claro button-zero">0</button>
+                <button onclick="addValue('.')" class="cinza-claro">,</button>
+                <button onclick="calculate('')" class="azul">=</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
